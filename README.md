@@ -1,0 +1,56 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Rocket, Moon, Sun, Star } from 'lucide-react';
+
+const Home = () => {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-black to-blue-900 text-white p-6">
+      <header className="text-center mb-10">
+        <h1 className="text-4xl font-bold mb-2">Explorando o Universo</h1>
+        <p className="text-xl">Descubra os mistérios do espaço sideral</p>
+      </header>
+
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <Card className="bg-gray-800 hover:shadow-lg">
+          <CardContent className="flex flex-col items-center text-center">
+            <Rocket className="w-16 h-16 mb-4 text-indigo-500" />
+            <h2 className="text-2xl font-semibold">Foguetes</h2>
+            <p>Conheça as máquinas que nos levam além da Terra.</p>
+            <Button className="mt-4">Saiba Mais</Button>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-800 hover:shadow-lg">
+          <CardContent className="flex flex-col items-center text-center">
+            <Moon className="w-16 h-16 mb-4 text-yellow-500" />
+            <h2 className="text-2xl font-semibold">Lua</h2>
+            <p>Descubra os segredos do nosso satélite natural.</p>
+            <Button className="mt-4">Saiba Mais</Button>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-800 hover:shadow-lg">
+          <CardContent className="flex flex-col items-center text-center">
+            <Sun className="w-16 h-16 mb-4 text-orange-500" />
+            <h2 className="text-2xl font-semibold">Sol</h2>
+            <p>O astro rei que sustenta toda a vida na Terra.</p>
+            <Button className="mt-4">Saiba Mais</Button>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-800 hover:shadow-lg">
+          <CardContent className="flex flex-col items-center text-center">
+            <Star className="w-16 h-16 mb-4 text-white" />
+            <h2 className="text-2xl font-semibold">Estrelas</h2>
+            <p>Gigantes de gás que iluminam o universo.</p>
+            <Button className="mt-4">Saiba Mais</Button>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
+
